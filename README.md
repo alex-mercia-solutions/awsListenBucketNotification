@@ -13,7 +13,7 @@ An example for my specific case:
 1. New .iso file gets uploaded into my bucket
 2. The bucket sends an event notification to the SQS queue
 3. The awslisten command reads the message from the queue and checks if it was a PUT or MultiPartUpload event
-4. If it was either of the above events it takes the key from the message body of the event and runs custom code to download the .iso, extract and append to a database - I omitted the download and extract.
+4. If it was either of the above events it takes the key from the message body of the event and runs custom code to download the .iso, extract and append to a database - I omitted the download and extract and database append.
 5. The message is then deleted if the above completes without error which stops it constanly running the code against the same job.
 
 ### Prerequisites 
