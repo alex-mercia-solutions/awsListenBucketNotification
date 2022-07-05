@@ -42,7 +42,7 @@ func main() {
 	awslisten()
 }
 
-func awslisten() {
+func AwsListen() {
 	queue := flag.String("q", "examplequeue", "The name of the queue")
 	// can change wait time to determine how long to poll for new messages
 	waitTime := flag.Int64("w", 10, "How long the queue waits for messages")
